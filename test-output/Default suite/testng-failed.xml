@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test verbose="2" name="Default test">
+    <classes>
+      <class name="tests.MailTest"/>
+    </classes>
+  </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="tests.MailTest">
+        <methods>
+          <include name="login"/>
+          <include name="createLetter" invocation-numbers="0 1"/>
+          <include name="assertLetter"/>
+          <include name="exit"/>
+          <include name="failTest"/>
+          <include name="logOut"/>
+          <include name="initial"/>
+          <include name="dragAndDrop"/>
+        </methods>
+      </class> <!-- tests.MailTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration debug="false"
+	xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<appender name="ConsoleAppender" class="org.apache.log4j.ConsoleAppender">
+		<param name="Encoding" value="Cp866" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%-5p]-[%d{yyyy-MM-dd HH:mm:ss}] [%50l]: %m%n" />
+			<!-- %d{yyyy-MM-dd HH:mm:ss} - %m%n -->
+		</layout>
+	</appender>
+
+	<appender name="ReportNgAppender" class="utils.ReportNgAppender">
+		<param name="Encoding" value="Cp866" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%-5p]-[%d{yyyy-MM-dd HH:mm:ss}] [%50l]: %m%n" />
+		</layout>
+	</appender>
+
+	<root>
+		<priority value="INFO" />
+		<appender-ref ref="ConsoleAppender" />
+		<appender-ref ref="ReportNgAppender" />
+	</root>
+
+</log4j:configuration>

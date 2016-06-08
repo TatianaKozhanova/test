@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<letter>
+		<address>testwebdr@rambler.ru</address>
+		<theme>test1</theme>
+		<text>string1</text>
+	</letter>
+	<letter>
+		<address>test_selen@mail.ru</address>
+		<theme>test2</theme>
+		<text>string2</text>
+	</letter>
+</data>

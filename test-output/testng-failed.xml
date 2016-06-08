@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Mail suite]">
+  <test verbose="2" name="Mail test">
+    <classes>
+      <class name="tests.MailTest"/>
+    </classes>
+  </test> <!-- Mail test -->
+  <test name="Mail test(failed)">
+    <classes>
+      <class name="tests.MailTest">
+        <methods>
+          <include name="createLetter"/>
+          <include name="exit"/>
+          <include name="failTest"/>
+          <include name="initial"/>
+        </methods>
+      </class> <!-- tests.MailTest -->
+    </classes>
+  </test> <!-- Mail test(failed) -->
+</suite> <!-- Failed suite [Mail suite] -->
