@@ -35,7 +35,7 @@ public class MailTest extends Driver {
 		LOG.info("Finish 'createLetter' test");
 	}
 	
-	/**/
+	/*
 	@Test(priority = 1, dependsOnMethods = "createLetter")
 	public void failTest(){
 		LOG.fatal("Start 'failTest' test.");
@@ -43,7 +43,7 @@ public class MailTest extends Driver {
 		Assert.fail("Fail test!");
 		LOG.fatal("Finish 'failTest' test.");
 	}
-	/**/
+	*/
 	
 	@Test(priority = 2, dataProvider = "letterInfo", dataProviderClass = ReadXmlFile.class, dependsOnMethods = "createLetter")
 	public void assertLetter(String address, String theme, String text) throws Exception {
